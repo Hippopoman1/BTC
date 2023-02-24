@@ -184,3 +184,20 @@ with cl4:
 
 with cl5:
     st.title('download ข้อมูลได้ที่นี้')
+    df = pd.read_csv("BTC-USD.csv")
+
+
+    @st.experimental_memo
+    def convert_df(df):
+        return df.to_csv(index=False).encode('utf-8')
+
+
+    csv = convert_df(df)
+
+    st.download_button(
+        "Press to Download",
+        csv,
+        "file.csv",
+        "text/csv",
+        key='download-csv'
+    )
