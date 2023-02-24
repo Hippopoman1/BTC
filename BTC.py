@@ -28,13 +28,13 @@ button[data-baseweb="tab"] > div[data-testid="stMarkdownContainer"] > p {
 """
 
 st.write(font_css, unsafe_allow_html=True)
-cl1, cl2, cl3, cl4, cl5 = st.tabs(['Main', 'Bitcoin Price Prediction', 'Record BTC', 'Creator of bitcoin', 'Download'])
+cl1, cl2, cl3, cl4, cl5 = st.tabs(['Main', 'Bitcoin Price Prediction', 'BTC history', 'Creator of bitcoin', 'Download'])
 
 with cl1:
     st.title("ยินดีต้อนรับสู่โลกของ Bitcoin🪙")
     st.write('🕛Bitcoin จะราคาเท่าไหร่(คาดการณ์)')
     st.write('🪙Bitcoin คือ?')
-    st.write('🕵️‍♀️‍ไครสร้าง Bitcoin')
+    st.write('🕵️‍♀️‍ใครสร้าง Bitcoin')
     st.write('⬇Download')
 
 with cl2:
