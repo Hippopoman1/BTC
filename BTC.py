@@ -10,7 +10,7 @@ st.markdown(
     f"""
        <style>
        .stApp {{
-           background-image: url("https://wallpapers.com/images/hd/hd-bitcoin-photography-xzl1ha675651mmpr.jpg");
+           background-image: url("");
            background-attachment: fixed;
            background-size: cover;
            /* opacity: 0.3; */
